@@ -1,0 +1,18 @@
+runtime: php55
+api_version: 1
+
+handlers:
+
+- url: /(.*\.(gif|GIF|png|PNG|jpg|JPG|ico|ICO|js|JS|css|CSS|html|json))
+  static_files: \1
+  upload: (.*\.(gif|GIF|png|PNG|jpg|JPG|ico|ICO|js|JS|css|CSS|html|json))
+  
+- url: /.*
+  script: index.html
+
+  
+  
+
+#handlers:
+# url: /.*
+# script: index.html
